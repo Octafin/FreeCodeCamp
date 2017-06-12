@@ -4,7 +4,7 @@ function uniteUnique() {
   
     for (var i = 0; i < arguments.length; i++) {
       for (var y = 0; y < arguments[i].length; y++) {
-        if (newArr.indexOf(arguments[i][y]) < 0) {
+        if (newArr.indexOf(arguments[i][y]) === -1) {
           
           newArr.push(arguments[i][y]);
         } else {
